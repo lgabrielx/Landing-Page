@@ -6,6 +6,7 @@
     font-family: 'Poppins', sans-serif;
     list-style: none;
     text-decoration: none;
+    overflow: none;
 }
 :root{
     --orange: #FF6A2F;
@@ -158,9 +159,10 @@ body{
 
 .blog{
     background-color: var(--yellow);
-    width: 84.4rem;
+    width: 84.30rem;
     margin-top: 50px;
     margin-bottom: 50px;
+    
 
 }
 .texto{
@@ -369,16 +371,19 @@ input {
 
 footer{
     background-color: #ff6a2e;
-    width: 84.38rem;
-    height: 204px;
+    width: 84.30rem;
+    height: 200px;
     
 }
 
-.contatos{
-    justify-content: space-between;
+.patro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .foto {
     width: 200px;
+    align-items: center;
 
 }
 .embratur{
@@ -392,7 +397,7 @@ footer{
 }
 .instagram{
     margin-bottom: 80px;
-    margin-left: 60px;
+    margin-left: 20px;
     margin-right: 10px;
     width: 40px;
 }
@@ -411,7 +416,7 @@ footer{
 .youtube{
     margin-bottom: 80px;
     margin-left: 20px;
-    margin-right: 40px;
+    margin-right: 10px;
     width: 40px;
 }
 .jit{
@@ -423,7 +428,7 @@ footer{
 
 
 
-@media (max-width: 785px) {
+@media screen and (max-width: 1020px){
     .navigation{
         padding: 18px 20px;
     }
@@ -480,6 +485,15 @@ footer{
         margin-top: 0;
     }
 
+    .text-video{
+        text-align: center;
+    }
+    .video{
+        justify-content: center;
+        align-items: center;
+        
+    }
+
     .container{
         flex-direction: column;
         justify-content: center;
@@ -487,26 +501,28 @@ footer{
     }
     .card1{
         width: 400px;
-        margin: 30px;
+        margin-bottom: 30px;
         
     }
     .card2{
         width: 400px;
-        margin: 30px;
     }
 
     #Avideo{
         margin-top: 350px;
+        
     }
     .text-video{
         font-size: 20px;
     }
     .video{
+        margin: 0;
         margin-left: 0;
     }
 
     .blog{
-        max-width: 33rem;
+        max-width: 31.7rem;
+        height: auto;
     }
     .cards{
         flex-direction: column;
@@ -542,14 +558,17 @@ footer{
 
     footer{
         background-color: #ff6a2e;
-        max-width: 33rem;
-        height: 340px;
+        max-width: 31.7rem;
+        height: auto;
         flex-direction: column;
         
     }
+    .patro{
+        flex-direction: column;
+    }
     .instagram{
-        margin-bottom: 60px;
-        margin-left: 60px;
+        margin-bottom: 80px;
+        margin-left: 20px;
         margin-right: 10px;
         width: 40px;
     }
@@ -560,15 +579,15 @@ footer{
         width: 40px;
     }
     .linkedin{
-        margin-bottom: 60px;
+        margin-bottom: 80px;
         margin-left: 20px;
         margin-right: 10px;
         width: 40px;
     }
     .youtube{
-        margin-bottom: 60px;
+        margin-bottom: 80px;
         margin-left: 20px;
-        margin-right: 40px;
+        margin-right: 10px;
         width: 40px;
     }
     .jit{
